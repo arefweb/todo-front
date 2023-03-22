@@ -30,7 +30,12 @@ const ToDoList = ({todos, deleteTodo, updateTodo, sort, setSort}: IToDoList) => 
         </div>
       )}
       {todos.map((todo) => {
-        return <ToDoCard key={todo.id} todo={todo} deleteTodo={deleteTodo} updateTodo={updateTodo} />;
+        return <ToDoCard
+          key={todo.id}
+          todo={todo}
+          deleteTodo={deleteTodo}
+          updateTodo={updateTodo}
+        />;
       })}
     </div>
   )

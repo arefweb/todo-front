@@ -20,12 +20,14 @@ const Header = ({ addTodo }: IHeader) => {
               setTask("");
             }
           }}
+          data-cy="add todo input"
           placeholder="Add a new todo here"
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
         <button
           className="AppHeader_wrapper_btn"
+          data-cy="add todo btn"
           onClick={() => {
             addTodo(task);
             setTask("")
